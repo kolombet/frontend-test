@@ -1,0 +1,59 @@
+@import "../../../../styles/variables";
+
+.aside {
+  padding: $unit-half;
+  background-color: #FFFFFF;
+  height: 100%;
+
+  .ads-description {
+    font-size: 14px;
+    color: #002D4F;
+    text-align: center;
+    margin-top: $unit-half;
+    margin-bottom: $unit;
+  }
+
+  .ads {
+    background: transparent url('/assets/nicebeauty.com_eu_@2x.png') 0 0 no-repeat padding-box;
+    background-size: cover;
+    width: 160px;
+    height: 112px;
+    margin: auto;
+  }
+
+  .list {
+    background-color: #F4F9FC;
+  }
+
+  .menu {
+    overflow-x: scroll;
+    display: flex;
+  }
+
+  .menu-item {
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #4C6C83;
+    margin-bottom: $unit-half;
+    margin-right: $unit-half;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .aside {
+    padding: $unit-double;
+
+    .ads-description {
+      margin-bottom: 57px;
+    }
+
+    .menu {
+      flex-direction: column;
+    }
+
+    .menu-item {
+      margin-bottom: 33px;
+    }
+  }
+}

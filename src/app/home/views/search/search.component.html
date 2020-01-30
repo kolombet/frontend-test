@@ -1,0 +1,4 @@
+<div class="list">
+    <app-search-bar (search)="onSearch($event)"></app-search-bar>
+    <app-search-result *ngFor="let itemData of items" [item]="itemData"></app-search-result>
+</div>

@@ -1,0 +1,13 @@
+<div class="search">
+    <div class="item">
+        <p class="item-text">{{item.title}}</p>
+        <div class="item-button">
+            <p>Button</p>
+        </div>
+    </div>
+</div>
+
+<div class="children">
+    <app-search-result *ngFor="let itemData of item.children" [item]="itemData"></app-search-result>
+</div>
+
