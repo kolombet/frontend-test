@@ -1,0 +1,42 @@
+@import "../../../../styles/variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  border-bottom: 1px solid #EAEEF4;
+  background-color: #FFFFFF;
+
+  .logo {
+    margin-left: $unit-double;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-right: $unit-double;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+    background: url('/assets/c4beea3c4cccbceb8de269c8cdf11f2e@2x.png') no-repeat center center;
+    background-size: 32px 32px;
+    border-radius: 100%;
+  }
+
+  .user-name {
+    color: #002D4F;
+    font-family: "Soleil", serif;
+    font-size: 14px;
+    margin-left: $unit-half;
+  }
+
+  .dropdown {
+    width: 8px;
+    height: 4px;
+    margin-left: $unit-half;
+    background: transparent url('/assets/dropdown.svg') 0 0 no-repeat padding-box;
+  }
+}

@@ -1,0 +1,4 @@
+<div class="search">
+    <input [(ngModel)]="query" (input)="onSearchChange($event.target.value)" placeholder="Search"/>
+    <button (click)="submitSearch()" class="icon"></button>
+</div>

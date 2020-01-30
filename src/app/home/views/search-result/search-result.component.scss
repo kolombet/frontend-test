@@ -1,0 +1,66 @@
+@import "../../../../styles/variables";
+
+.search {
+  padding: $unit-half;
+
+  .item {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E5E9ED;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  .item-text {
+    font-family: "Soleil", serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #00124F;
+  }
+
+  .item-button {
+    width: 117px;
+    height: $unit-double;
+    background: #0087EF 0 0 no-repeat padding-box;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .item-button p {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Soleil", serif;
+    letter-spacing: 0;
+    color: #FFFFFF;
+  }
+}
+
+.children {
+  margin-left: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .search {
+    padding-left: 70px;
+    padding-right: 70px;
+
+    .menu {
+      flex-direction: column;
+    }
+
+    .aside {
+      padding: $unit-double;
+    }
+
+    .menu-item {
+      margin-bottom: 33px;
+    }
+  }
+}

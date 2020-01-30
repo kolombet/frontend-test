@@ -1,0 +1,36 @@
+@import "../../../../styles/variables";
+
+.search {
+  height: $unit-double;
+  margin-top: 41px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 0 20px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #FFFFFF 0 0 no-repeat padding-box;
+  border: 1px solid #E5E9ED;
+  border-radius: 5px;
+
+  input {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    border: none;
+    text-decoration: none;
+    margin: 0;
+    background: transparent url('/assets/search.svg') 0% 0% no-repeat padding-box;
+  }
+
+  .icon:active {
+    filter: brightness(70%);
+  }
+}
